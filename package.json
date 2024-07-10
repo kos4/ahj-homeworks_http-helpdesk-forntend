@@ -7,9 +7,8 @@
   "scripts": {
     "start": "webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "lint": "eslint ./src",
-    "test": "jest",
-    "coverage": "jest --coverage",
+    "lint": "eslint . --fix",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "ci": "start-test :8080 test"
   },
   "engines": {
@@ -31,19 +30,19 @@
     "eslint-plugin-prettier": "4.2.1",
     "file-loader": "6.2.0",
     "html-loader": "4.2.0",
-    "html-webpack-plugin": "5.5.0",
     "jest": "29.5.0",
-    "mini-css-extract-plugin": "2.7.5",
     "prettier": "2.8.7",
     "start-server-and-test": "2.0.0",
-    "terser-webpack-plugin": "5.3.7",
     "url-loader": "4.1.1",
-    "webpack": "5.76.3",
     "webpack-cli": "5.0.1",
-    "webpack-dev-server": "4.13.1",
-    "webpack-merge": "5.8.0"
+    "webpack-dev-server": "4.13.1"
   },
   "dependencies": {
-    "core-js": "3.29.1"
+    "core-js": "3.29.1",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.9.0",
+    "terser-webpack-plugin": "^5.3.10",
+    "webpack": "^5.92.1",
+    "webpack-merge": "^6.0.1"
   }
 }

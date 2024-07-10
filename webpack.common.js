@@ -27,15 +27,7 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|gif)$/i,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              limit: 8192,
-              name: 'assets/[hash].[ext]',
-            },
-          },
-        ],
+        type: 'asset/resource',
       },
       {
         test: /\.css$/,
