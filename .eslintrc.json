@@ -12,5 +12,6 @@
       "LabeledStatement",
       "WithStatement"
     ]
-  }
+  },
+  "ignorePatterns": ["dist/*"]
 }
